@@ -1,0 +1,148 @@
+p {
+    /* color: white; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+.navigation-area {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;  
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    /* border-bottom-width: 5px;
+    border-bottom-style: solid; */
+}
+
+.navbar-nav {
+    flex-direction: row;
+    width: 100%;
+}
+
+@media only screen and (max-width: 581px) {
+    .navbar-nav {
+    flex-direction: column !important;
+    text-align: center;
+    }
+}
+
+.nav-item {
+    margin:0 10%;
+
+} 
+
+.nav-link {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 10px;
+    margin-right: 20px;
+    color: black !important;
+}
+
+
+.nav-link:hover {
+    /* color:#6e6e70 !important; */
+    text-decoration: underline;
+} 
+
+.navbar-brand {
+    display: block;
+    clear:both;
+    padding-top: 64px;
+    text-align: center;
+}
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 0px;
+    bottom: 0px;
+    top: 58px;
+}
+
+.big-container {
+    /* background-image: url(/assets/images/DSC_0898.JPG); */
+    height: 100%;
+    position: relative;
+/* opacity: 0.65; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 600px;
+}
+
+.questions{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+} 
+
+.question_line {
+    color: #fff;
+    
+}
+
+.email_us {
+    color: #fff;
+}
+
+
+.boas-logo-footer {
+    width:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.email {
+    text-align: center;   
+}
+
+.phone {
+    text-align: center;
+    color: #6e6e70;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;   
+}
+
+.card {
+    /* border-top-width: 5px;
+    border-top-color: black; */
+    padding-top: 30px;
+}
+
+.social-media-area {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px; 
+    color: #6e6e70;
+}  
+
+#footer-card {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}

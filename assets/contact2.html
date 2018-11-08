@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taylor Roy Portfolio</title>
+
+  <link rel="shortcut icon" href="./images/boas_logo_favicon.png" type="image/x-icon" />
+
+  <!--links bootstrap to html file-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--link to Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!--links css file to html file-->
+  <link rel="stylesheet" type="text/css" href="./css/contact_simple.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar at top -->
+  <div class="navigation-area">
+    <div class="navigation-area">
+      <nav class="navbar ">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item about">
+            <a class="nav-link" id="about" href="./index.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item clients">
+            <a class="nav-link" href="./client.html">Projects</a>
+          </li>
+          <li class="nav-item contact">
+            <a class="nav-link" href="./contact2.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <p class= "title">Taylor Roy</p>
+    </div>
+  </div>
+
+  <!-- style="background-image: url(./assets/images/sunset_banner.jpg)" -->
+  <div class="big-container" style="background-image: url(./images/contact_sunset.png">
+    <!-- <img class="van" src="./images/DSC_0898.JPG" alt="sunset picture" width="100%"> -->
+  </div>
+
+
+  <form id="contactForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFirstName">First Name</label>
+        <input type="text" class="form-control" id="inputFirstName">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputPhoneNumber">Phone Number</label>
+        <input type="text" class="form-control" id="inputPhoneNumber">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail">Email</label>
+        <input type="text" class="form-control" id="inputEmail">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputMessage">Message</label>
+      <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+    </div>
+    <button id="contact-submit" type="button" class="btn btn-primary">SUBMIT</button>
+  </form>
+
+
+
+
+
+  <!-- footer -->
+  <div id="footer-card" class="card mb-3">
+    <!-- <img class="boas-logo-footer card-img-top" src="./assets/images/boas final.JPG" alt="Card image cap" width=300px> -->
+    <div class="card-body">
+      <!-- <p class="card-title">Boas Marketing</p>
+      <p class="card-text">SLC, UT</p> -->
+      <p class="email"><a href="mailto:taylorbroy@gmail.com">taylorbroy@gmail.com</a></p>
+      <p class="phone">303-931-5273</p>
+      <div class="social-media-area">
+        <a class="facebook-icon" href="https://www.facebook.com/taylor.roy.148"><img src="./images/if_facebook_386622.png" alt="facebook logo"
+            width="50px"></a>
+            <a class="linkedin-icon" href="https://www.linkedin.com/in/taylor-roy-ab5420102/"><img src="./images/linkedin.png"
+              alt="linkedin logo" width="50px"></a>
+      </div>
+    </div>
+
+    <p class="copyright">© Copyright 2018. All rights reserved</p>
+  </div>
+
+  <!--links JQuery to HTML file-->
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      document.getElementById("contact-submit").onclick = function () {
+        //get input ids and create object
+        let contactData = {
+          first_name: $("#inputFirstName").val().trim(),
+          last_name: $("#inputLastName").val().trim(),
+          phone: $("#inputPhoneNumber").val().trim(),
+          email: $("#inputEmail").val().trim(),
+          message: $("#inputMessage").val().trim()
+        }
+
+        $.post("/api/contactEmail", contactData)
+          .then(function (data) {
+            console.log("add.html", data);
+          });
+      }
+    });
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

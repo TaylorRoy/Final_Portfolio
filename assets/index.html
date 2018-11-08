@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taylor Roy Portfolio</title>
+
+  <link rel="shortcut icon" href="./images/boas_logo_favicon.png" type="image/x-icon" />
+
+  <!--links JQuery to HTML file-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--links javascript file to html file-->
+  <script src="./javascript/train.js"></script>
+
+  <!--links bootstrap to html file-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="bootstrap.js"></script>
+
+  <!--link to Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+  <!--links css file to html file-->
+  <link rel="stylesheet" href="./css/charlie.css">
+
+  <!-- link to Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Link to Moment JS -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+</head>
+
+<body>
+  <!-- Navigation Bar at top -->
+  <!-- justify-content-center -->
+  <div id = "navigation-area" class="navigation-area">
+    <nav class="navbar">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item about">
+          <a class="nav-link" id="about" href="./index.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item clients">
+          <a class="nav-link" href="./client.html">Projects</a>
+        </li>
+        <li class="nav-item contact">
+          <a class="nav-link" href="./contact2.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <p class= "title">Taylor Roy</p>
+  </div>
+  
+  <div id="big-container" class="container-big">
+
+
+    <p class="motto">Welcome to my Coding Portfolio!</p> <br>
+    <p class="statement">I am a Full-Stack Web Developer with 17 years of molecular biology and genetics research experience hoping to find a full time developing position.  
+    </p> <br>
+
+    <p class="statement">I recently graduated from the Univeristy of Utah Coding Bootcamp.  Since I am new to coding, I am looking for a position that offers mentorship from team members, and the opportunity to continue learning. </p> <br>
+
+    <p class="statement">You can check out my work at:<a href="https://github.com/TaylorRoy?tab=repositories"> GitHub</a></p> 
+
+    <img class="van" src="./images/GOPR0065.JPG" alt="Van picture" width="100%">
+
+    <p class="help">Here is a list of skills I have learned:</p>
+
+    <p class="services-explanation"></p>
+
+    <div class="container">
+      <div class="row">
+        <div class="strategy col-lg-12">
+          <p class="strategy-header"> Front End</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="strategy-col1 col-lg">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>moment.js</p>
+        </div>
+        <div class="strategy-col2 col-lg">
+          <p>jQuery</p>
+          <p>AJAX</p>
+          <p>Firebase</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tactics col-lg-12">
+          <p class="tactics-header">Back End</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="tactics-col1 col-lg">
+          <p>Node</p>
+          <p>Express</p>
+          <p>MySQL</p>
+          <p>Sequelize</p>
+          
+        </div>
+        <div class="tactics-col2 col-lg">
+          <p>Handlebars</p>
+          <p>MVC</p>
+          <p>ORM</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="strategy col-lg-12">
+            <p class="strategy-header"> Coding Repositories</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="strategy-col1 col-lg">
+            <p>GitHub</p>
+            <p>Heroku</p>
+          </div>
+          <div class="strategy-col2 col-lg">
+            <p>JawsDB</p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div id="footer-card" class="card mb-3">
+    <!-- <img class="boas-logo-footer card-img-top" src="./assets/images/boas final.JPG" alt="Card image cap" width=300px> -->
+    <div class="card-body">
+      <!-- <p class="card-title">Boas Marketing</p>
+      <p class="card-text">SLC, UT</p> -->
+      <p class= "email"><a href="mailto:taylorbroy@gmail.com">taylorbroy@gmail.com</a></p>
+      <p class="phone">303-931-5273</p>
+      <div class="social-media-area">
+        <a class="facebook-icon" href="https://www.facebook.com/taylor.roy.148"><img src="./images/if_facebook_386622.png" alt="facebook logo"
+            width="50px"></a>
+        <a class="linkedin-icon" href="https://www.linkedin.com/in/taylor-roy-ab5420102/"><img src="./images/linkedin.png"
+            alt="linkedin logo" width="50px"></a>
+      </div>
+    </div>
+
+    <p class="copyright">© Copyright 2018. All rights reserved</p>
+  </div>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("logo").style.top = "0";
+      } else {
+        document.getElementById("logo").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+</body>
+
+</html>

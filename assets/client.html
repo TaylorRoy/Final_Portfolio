@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taylor Roy Portfolio</title>
+
+    <link rel="shortcut icon" href="./images/boas_logo_favicon.png" type="image/x-icon" />
+
+    <!--links JQuery to HTML file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--links javascript file to html file-->
+    <script src="./javascript/train.js"></script>
+
+    <!--links bootstrap to html file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="bootstrap.js"></script>
+
+    <!--link to Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!--links css file to html file-->
+    <link rel="stylesheet" href="./css/client.css">
+
+    <!-- link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <!-- Link to Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar at top -->
+    <div class="navigation-area">
+        <div class="navigation-area">
+            <nav class="navbar ">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item about">
+                        <a class="nav-link" id="about" href="./index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item clients">
+                        <a class="nav-link" href="./client.html">Projects</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link" href="./contact2.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class= "title">Taylor Roy</p>
+        </div>
+    </div>
+
+
+    <div class=container-big>
+
+        <div class="container-small">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="client-area col-sm-4">
+                    <div class="client-logo-card card">
+                        <div class="card-body">
+                            <a target="_blank" href="https://taylorroy.github.io/GIPHY-API/"><img class="card-img-top" src="./images/giphy.png"
+                                    alt="Card image cap"></a>
+                            <h5 class="card-title">GIPHY API</h5>
+                            <p class="card-text">Makes API call to GIPHY- uses HTML, CSS, jQUery, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-area col-sm-4">
+                    <div class="client-logo-card card">
+                        <div class="card-body">
+                            <a target="_blank" class="kit" href="https://taylorroy.github.io/Psychic_Game/"><img class="card-img-top" src="./images/vegetables.jpg"
+                                    alt="Card image cap"></a>
+                            <h5 class="card-title">Vegetable Hangman</h5>
+                            <p class="card-text">Word guessing game- uses HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class= "col-sm-2"></div>
+            </div>
+
+            <div class="second-row row">
+                <div class="col-sm-2"></div>
+                <div class="client-area col-sm-4">
+                    <div class="client-logo-card card">
+                        <div class="card-body">
+                            <a target="_blank" href="https://taylorroy.github.io/TriviaGame/"><img class="card-img-top" src="./images/utah.jpg"
+                                    alt="Card image cap"></a>
+                            <h5 class="card-title">Utah Trivia Game</h5>
+                            <p class="card-text">Multiple choice trivia- uses HTML, CSS, Bootstap, JavaScript, and timer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-area col-sm-4">
+                    <div class="client-logo-card card">
+                        <div class="card-body">
+                            <a target="_blank" href="https://taylorroy.github.io/unit-4-game/"><img class="card-img-top" src="./images/crystal.jpg"
+                                    alt="Card image cap"></a>
+                            <h5 class="card-title">Crystal Game</h5>
+                            <p class="card-text">Click on crystals to reach an exact point value- but don't go over.  Uses HTML, CSS, Bootstap, JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class= "col-sm-2"></div>
+            </div>
+
+
+            <div class="third-row row">
+                <div class="col-sm-2"></div>
+                <div class="client-area col-sm-4">
+                    <div class="client-logo-card card">
+                        <div class="card-body">
+                            <a target="_blank" href="https://taylorroy.github.io/Train-Scheduler/"><img class="card-img-top" src="./images/train.jpg"
+                                    alt="Card image cap"></a>
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <p class="card-text">Create a train schedule- uses HTML, CSS, Bootstrap, JavaScript, Moment.js, and Firebase</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-area col-sm-4">
+                    <div class="client-logo-card card">
+                        <div class="card-body">
+                            <a href="https://taylorroy.github.io/Soda_Guru/"><img class="card-img-top" src="./images/soda.jpg"
+                                    alt="Card image cap"></a>
+                             <h5 class="card-title">Soda_Guru</h5>
+                            <p class="card-text">First group project- uses HTML, CSS, Bootstrap, JavaScript, Moment.js, Google maps API call, and Firebase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fourth-row row">
+                    <div class="col-sm-2"></div>
+                    <div class="client-area col-sm-4">
+                        <div class="client-logo-card card">
+                            <div class="card-body">
+                                <a target="_blank" href="#"><img class="card-img-top" src="./images/liri.jpg"
+                                        alt="Card image cap"></a>
+                                <h5 class="card-title">LIRI</h5>
+                                <p class="card-text">A terminal based Node App- uses JavaScript, Node, and API calls to OMDB, BandsinTown, and Spotify.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-area col-sm-4">
+                        <div class="client-logo-card card">
+                            <div class="card-body">
+                                <a href="https://github.com/TaylorRoy/Store"><img class="card-img-top" src="./images/store.jpg"
+                                        alt="Card image cap"></a>
+                                 <h5 class="card-title">Store</h5>
+                                <p class="card-text">An terminal based Node app that takes orders from users and keeps track of inventory. Uses HTML, CSS, Bootstrap, JavaScript, jQuery and MySQL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fifth-row row">
+                        <div class="col-sm-2"></div>
+                        <div class="client-area col-sm-4">
+                            <div class="client-logo-card card">
+                                <div class="card-body">
+                                    <a target="_blank" href="https://howling-broomstick-99875.herokuapp.com/"><img class="card-img-top" src="./images/friend.jpg"
+                                            alt="Card image cap"></a>
+                                    <h5 class="card-title">Friend Finder</h5>
+                                    <p class="card-text">A full-stack app that takes in data from user, compares results with other users in database, and matches you with closest profile. Uses express, node, and Javascript for routing and storing data, Uses HTML,CSS and JavaScript to intake data. Server is hosted on Heroku. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-area col-sm-4">
+                            <div class="client-logo-card card">
+                                <div class="card-body">
+                                    <a href="https://github.com/TaylorRoy/Store"><img class="card-img-top" src="./images/burger.jpg"
+                                            alt="Card image cap"></a>
+                                     <h5 class="card-title">Eat Da Burger</h5>
+                                    <p class="card-text">A full stack app that uses CRUD operations.  Uses HTML, CSS, Bootstrap,Javascript, Node, MySQL, Express and Handlebars.  Server is hosted on Heroku.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer-card" class="card mb-3">
+        <!-- <img class="boas-logo-footer card-img-top" src="./assets/images/boas final.JPG" alt="Card image cap" width=300px> -->
+        <div class="card-body">
+            <!-- <p class="card-title">Boas Marketing</p>
+      <p class="card-text">SLC, UT</p> -->
+            <p class="email"><a href="mailto:taylorbroy@gmail.com" target="_top">taylorbroy@gmail.com</a></p>
+            <p class="phone">303-931-5273</p>
+            <div class="social-media-area">
+                <a class="facebook-icon" href="https://www.facebook.com/"><img src="./images/if_facebook_386622.png"
+                        alt="facebook logo" width="50px"></a>
+                        <a class="linkedin-icon" href="https://www.linkedin.com/in/taylor-roy-ab5420102/"><img src="./images/linkedin.png"
+                            alt="linkedin logo" width="50px"></a>
+            </div>
+        </div>
+
+        <p class="copyright">© Copyright 2018. All rights reserved</p>
+    </div>
+
+</body>
+
+</html>
