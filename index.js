@@ -22,7 +22,7 @@ app.get("/contact", function (req, res) {
 });
 
 app.post('/api/contactEmail', function (req, res) {
-    sgMail.setApiKey("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");
+    sgMail.setApiKey("API KEY HERE");
     const msg = {
         to: 'charlieboas@gmail.com',
         from: req.body.email,
